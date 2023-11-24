@@ -43,9 +43,9 @@ StyleDictionary.registerFormat({
     const { outputReferences, colorScheme } = options;
     let root = ":root";
     if(colorScheme === "light"){
-      root = `:root, \n:host, \n.awc-theme-light, \n:is([data-mode='dark'] .dark\:awc-theme-light), \n[data-mode='light']`;
+      root = `:root, \n:host, \n.awc-theme-light, \n:is([data-mode='dark'] .dark\\:awc-theme-light), \n[data-mode='light']`;
     }else if(colorScheme === "dark"){
-      root = `:host, \n.awc-theme-dark, \n:is([data-mode='light'] .dark\:awc-theme-dark), \n[data-mode='dark']`;
+      root = `:host, \n.awc-theme-dark, \n:is([data-mode='light'] .dark\\:awc-theme-dark), \n[data-mode='dark']`;
     }
 
     return `
