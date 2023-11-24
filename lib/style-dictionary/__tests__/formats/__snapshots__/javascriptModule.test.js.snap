@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`formats javascript/module should be a valid JS file 1`] = `
+"/**
+ * Do not edit directly
+ * Generated on Sat, 01 Jan 2000 00:00:00 GMT
+ */
+
+module.exports = {
+  \\"color\\": {
+    \\"red\\": {
+      \\"value\\": \\"#FF0000\\"
+    }
+  }
+};
+"
+`;

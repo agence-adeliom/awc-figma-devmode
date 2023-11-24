@@ -1,0 +1,22 @@
+{
+    "extends": "@create-figma-plugin/tsconfig",
+    "compilerOptions": {
+        "baseUrl": ".",
+        "esModuleInterop": true,
+        "isolatedModules": false,
+        "strict": false,
+        "typeRoots": [
+            "node_modules/@figma",
+            "node_modules/@types",
+        ],
+        "paths": {
+            "@typing/*": ["types/*"],
+            "@*": ["src/*"]
+        }
+    },
+    "include": [
+        "types/**/*.ts",
+        "src/**/*.ts", 
+        "src/**/*.tsx",
+    ]
+  }

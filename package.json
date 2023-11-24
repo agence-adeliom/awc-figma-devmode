@@ -1,0 +1,58 @@
+{
+  "dependencies": {
+    "@create-figma-plugin/ui": "^2.6.1",
+    "@create-figma-plugin/utilities": "^2.6.1",
+    "preact": ">=10",
+    "react-code-blocks": "^0.1.4",
+    "style-dictionary": "file:./lib/style-dictionary",
+    "tinycolor2": "^1.6.0"
+  },
+  "devDependencies": {
+    "@create-figma-plugin/build": "^2.6.1",
+    "@create-figma-plugin/tsconfig": "^2.6.1",
+    "@figma/plugin-typings": "1.74.0",
+    "@types/react": ">=18",
+    "concurrently": ">=8",
+    "tailwindcss": ">=3",
+    "typescript": ">=4",
+    "react": ">=18"
+  },
+  "scripts": {
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "tailwindcss --input ./src/assets/input.css --output ./src/assets/output.css",
+    "build:js": "build-figma-plugin --typecheck --minify",
+    "watch": "npm run build:css && concurrently npm:watch:css npm:watch:js",
+    "watch:css": "tailwindcss --input ./src/assets/input.css --output ./src/assets/output.css --watch",
+    "watch:js": "build-figma-plugin --typecheck --watch"
+  },
+  "figma-plugin": {
+    "id": "1309621381500130306",
+    "name": "Adeliom WebComponents - For Figma Dev Mode",
+    "main": "src/main.ts",
+    "ui": "src/ui.tsx",
+    "networkAccess": { "allowedDomains": ["none"] },
+    "editorType": [
+      "dev"
+    ],
+    "capabilities": [
+      "inspect",
+      "codegen"
+    ],
+    "codegenLanguages": [
+      { "label": "Variables", "value": "variables" }
+    ],
+    "codegenPreferences": [
+      {
+        "itemType": "unit",
+        "scaledUnit": "rem",
+        "defaultScaleFactor": 16,
+        "default": true
+      },
+      {
+        "itemType": "action",
+        "propertyName": "otherSettings",
+        "label": "Settings"
+      }
+    ]
+  }
+}
