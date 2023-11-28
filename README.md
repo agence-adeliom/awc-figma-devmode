@@ -1,4 +1,29 @@
-# Preact Tailwind CSS
+# Adeliom WebComponents - For Figma Dev Mode
+
+![cover](.figma/cover_art.png)
+
+**Adeliom WebComponents - For Figma Dev Mode** is a dedicated plugin designed for enhancing the workflow of Figma users, especially in development mode. This tool is engineered to streamline the design-to-code transition, crucial for modern web development.
+
+**Key Features**
+
+-   Variable Extraction: Extracts design variables directly from Figma files.
+-   Format Conversion: Transforms these variables into CSS and JSON formats, ensuring seamless integration.
+-   Compatibility with AWC: Specifically tailored to be fully compatible with Adeliom WebComponents (AWC) design systems.
+
+**Benefits**
+
+-   Efficiency in Design Workflow: Significantly reduces the time and effort needed to convert design elements into usable code.
+-   Seamless Integration: Facilitates an effortless transition of design elements into the AWC ecosystem, maintaining design integrity and consistency.
+-   Bridging Design and Development: Ideal for teams seeking a cohesive workflow between designers and developers.
+
+**Use Cases**
+
+-   Web Development: Perfect for developers working with complex web components.
+-   UI/UX Design: Assists designers in visualizing how their designs will translate into actual web components.
+
+**Learn More**
+
+For a deeper understanding of how `Adeliom WebComponents - For Figma Dev Mode` integrates with the AWC design systems, visit [AWC Design Systems](https://webcomponents.adeliom.io/).
 
 ## Development guide
 
